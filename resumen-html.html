@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resumen-html</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="resumen-html.html">HTML</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <article>
+          <h1>Explicación general</h1>
+          <p>
+            El lenguaje de etiquetado HTML esta compuesto por una serie de nodos
+            llamados etiquetas o elementos los cuales permiten decirle al
+            navegador como mostrar el contenido de una pagina web.
+          </p>
+          <h1>Básicas</h1>
+          <p>Las etiquetas mostradas a continuación son las más usadas:</p>
+          <ul>
+            <li>
+              La etiqueta <code>&lt;!DOCTYPE html&gt;</code> define que el
+              documento es HTML5.
+            </li>
+            <li>
+              La etiqueta <code>&lt;html&gt;</code> es el elemento raiz de una
+              pagina html.
+            </li>
+            <li>
+              La etiqueta <code>&lt;head&gt;</code> es el elemento que contiene
+              los metadatos de la página.
+            </li>
+            <li>
+              La etiqueta <code>&lt;title&gt;</code> sirve para asignar el
+              titulo a la pestaña de la web.
+            </li>
+            <li>
+              La etiqueta <code>&lt;body&gt;</code> define el cuerpo de la web
+              donde se muestra el contenido.
+            </li>
+            <li>
+              La etiqueta <code>&lt;h1&gt;</code> define un titulo mostrado en
+              el body.
+            </li>
+          </ul>
+          <h1>Estructura estándar de una web</h1>
+          <p>
+            La forma estándar de una página web debe tener la siguiente
+            estructura:
+          </p>
+          <img
+            src="static/img/Secciones-de-una-pagina-web-en-html.webp"
+            alt="estructura de una web"
+            width="300px"
+          />
+          <h1>Etiquetas</h1>
+          <p>
+            Las etiquetas tienen atributos los cuales dado cierto valor generan
+            un comportamiento distinto. El atributo
+            <code>&lt;style&gt;</code> sirve para agregar estilos a través de
+            codigo CSS.
+          </p>
+          <ul>
+            <li>
+              <code>&lt;h1&gt;</code> permite crear titulos y subtitulos, van
+              desde <code>h1-h6</code> dentro de una misma jerarquía. Ocupa todo
+              el largo de su nodo padre. Los "headings" son usados por los
+              motores de busqueda para indexar la página y que la web tenga
+              mejor visibilidad, por lo que es importante utilizarlos de forma
+              correcta y no solo para cambiar el aspecto de un titulo.
+            </li>
+            <li><code>&lt;p&gt;</code> permite crear parrafos.</li>
+            <li><code>&lt;a&gt;</code> sirve para crear links.</li>
+            <li>
+              <code>&lt;img&gt;</code> permite agregar imágenes. Nota: es mejor
+              usar imagenes relativas a la página ya que no se tiene control de
+              imagenes que provienen de otros dominios y es posible inflingir
+              copyright
+            </li>
+            <li><code>&lt;br&gt;</code> agrega un salto de linea (Break)</li>
+            <li>
+              <code>&lt;hr&gt;</code> etiqueta que rompe con una linea
+              horizontal una página.
+            </li>
+            <li>
+              <code>&lt;pre&gt;</code>
+              sirve para mostrar el contenido de la etiqueta con el formato
+              preformateado, evitando que el navegador formatee el contenido.
+            </li>
+          </ul>
+          <h1>Etiquetas de texto</h1>
+          <li><code>&lt;b&gt;</code> <b>negrita</b></li>
+          <li><code>&lt;strong&gt;</code> <strong>texto importante</strong></li>
+          <li><code>&lt;i&gt;</code> <i>italica</i></li>
+          <li><code>&lt;em&gt;</code> <em>enfásis</em></li>
+          <li><code>&lt;mark&gt;</code> <mark>texto marcado</mark></li>
+          <li><code>&lt;small&gt;</code> <small>pequeña</small></li>
+          <li><code>&lt;del&gt;</code> <del>texto eliminado</del></li>
+          <li><code>&lt;ins&gt;</code> <ins>texto insertado</ins></li>
+          <li><code>&lt;sub&gt;</code> <sub>texto subíndice</sub></li>
+          <li><code>&lt;sup&gt;</code> <b>texto sobreescrito</b></li>
+          <h1>Citas</h1>
+          <a
+            href="https://www.w3schools.com/html/html_quotation_elements.asp"
+            target="_blank"
+            >Citas en HTML</a
+          >
+          <h1>Links</h1>
+          <ul>
+            <li>
+              El atributo target permite abrir los links de forma diferente,
+              <a
+                href="https://www.w3schools.com/html/html_images.asp"
+                target="_blank"
+                >ejemplos</a
+              >
+            </li>
+            <li>
+              Los bookmark permiten navegar una página usando links a las
+              diferentes secciones de una web. Ejemplo:
+              <code>&lt;a href="#C4"&gt;</code>, el link saltaría a la sección
+              con <code>id=#C4</code>
+            </li>
+          </ul>
+          <h1>Imágenes</h1>
+          <ul>
+            <li>
+              Puedes definir el width y height con los atributos html pero es
+              mejor hacerlo con el atributo style, ya que si no, la imagen no
+              puede cambiar el alto y ancho una vez definidos.
+            </li>
+            <li>
+              Image map, permite definir imágenes clickeables las cuales pueden
+              redireccionar a otros sitios. Para más información acceder a
+              <a
+                href="https://www.w3schools.com/html/html_images_imagemap.asp"
+                target="_blank"
+              ></a>
+            </li>
+            <li>
+              <code>&lt;picture&gt;</code> sirve para mostrar diferentes
+              imagenes dependiendo de la resolución del dispositivo en el cual
+              el navegador ejecuta la web.
+              <a
+                href="https://www.w3schools.com/html/html_images_picture.asp"
+                target="_blank"
+              >
+                Mas info.</a
+              >
+            </li>
+          </ul>
+          <h1>Favicon</h1>
+          <p>
+            Icono que aparece en la pestaña de la página. Para agregarse, se
+            debe definir en el header del index.html con la etiqueta
+            <code>&lt;link&gt;</code>.
+            <a
+              href="https://www.w3schools.com/html/html_favicon.asp"
+              target="_blank"
+              >Mas info</a
+            >
+          </p>
+          <h1>Titulo</h1>
+          <p>
+            Definir de forma correcta el titulo de la pagina en el header es muy
+            importante ya que es usado por el SEO (search engine optimization),
+            para mostrar la página en los primeros resultados.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
